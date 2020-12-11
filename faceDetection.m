@@ -11,5 +11,6 @@ bbox = step(faceDetector, img);                 % Create a box with 4 values tha
                                                 % are around the face
 croppedImg = imcrop(img, bbox);                 % Crop the image with the values
 rightImg = imresize(croppedImg, [256 NaN]);
+%rightImg = rgb2gray(rightImg);
 end
 
